@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "2cca9f92-c85a-4dff-8c1a-f8823e0a866d",
+		"name": "Blockchain workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "5001",
+			"item": [
+				{
+					"name": "connect nodes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nodes\":[\"http://localhost:5002\",\"http://localhost:5003\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/connect_node",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"connect_node"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/get_chain",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"get_chain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "is valid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/is_valid",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"is_valid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mine block",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/mine_block",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"mine_block"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sender\":\"archeel\",\r\n    \"receiver\":\"aditya\",\r\n    \"amount\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/add_transaction",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"add_transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "replace chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/replace_chain",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"replace_chain"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5002",
+			"item": [
+				{
+					"name": "connect nodes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nodes\":[\"http://localhost:5001\",\"http://localhost:5003\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/connect_node",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"connect_node"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5002/get_chain",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"get_chain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "is valid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5002/is_valid",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"is_valid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mine block",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5002/mine_block",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"mine_block"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sender\":\"archeel\",\r\n    \"receiver\":\"aditya\",\r\n    \"amount\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5002/add_transaction",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"add_transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "replace chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5002/replace_chain",
+							"host": [
+								"localhost"
+							],
+							"port": "5002",
+							"path": [
+								"replace_chain"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5003",
+			"item": [
+				{
+					"name": "connect nodes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nodes\":[\"http://localhost:5001\",\"http://localhost:5002\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/connect_node",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"connect_node"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5003/get_chain",
+							"host": [
+								"localhost"
+							],
+							"port": "5003",
+							"path": [
+								"get_chain"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "is valid",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5003/is_valid",
+							"host": [
+								"localhost"
+							],
+							"port": "5003",
+							"path": [
+								"is_valid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mine block",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5003/mine_block",
+							"host": [
+								"localhost"
+							],
+							"port": "5003",
+							"path": [
+								"mine_block"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sender\":\"archeel\",\r\n    \"receiver\":\"aditya\",\r\n    \"amount\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/add_transaction",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"add_transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "replace chain",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5003/replace_chain",
+							"host": [
+								"localhost"
+							],
+							"port": "5003",
+							"path": [
+								"replace_chain"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
